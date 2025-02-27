@@ -5,19 +5,19 @@ const projects = [
     id: 1,
     title: "Social App Features",
     description: "A modern social media app built with React and Laravel.",
-    image: "/images/portfolio/Social_App_Features.jpg",
+    image: "images/portfolio/Social_App_Features.jpg",
   },
   {
     id: 2,
     title: "E-Commerce Platform",
     description: "An advanced e-commerce solution with secure payment integration.",
-    image: "/images/portfolio/Ecommerce_Platform.jpg",
+    image: "images/portfolio/Ecommerce_Platform.jpg",
   },
   {
     id: 3,
     title: "Portfolio Website",
     description: "A professional portfolio built with React and Tailwind CSS.",
-    image: "/images/portfolio/Portfolio_Website.jpg",
+    image: "images/portfolio/Portfolio_Website.jpg",
   },
 ];
 const Portfolio = () => {
@@ -28,7 +28,7 @@ const Portfolio = () => {
       {/* Header Section */}
       <header className="header text-center">
         <img
-          src="/images/user.png"
+          src="images/user.png"
           alt="User Profile"
           className="profile-img mb-3"
         />
@@ -36,7 +36,7 @@ const Portfolio = () => {
         <p className="fw-600">
           Full-Stack PHP Developer | Laravel Expert | WordPress Specialist | AWS Enthusiast
         </p>
-        <p>Contact: user@example.com | +123456789</p>
+        <p>Contact: alpeshbheda.job@example.com | +91 6355176760</p>
       </header>
 
       {/* Main Content */}
@@ -392,6 +392,12 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <footer className="footer">
+        <p>Contact: alpeshbheda.job@example.com | Phone: +91 6355176760</p>
+        <p>&copy; 2024 Alpesh Bheda. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 };
