@@ -6,7 +6,9 @@ body {
   background-color: #F8F9FA;
   color: #333;
 }
-
+strong{
+  font-weight:600;
+}
 /* Header Section */
 .header {
   background: linear-gradient(to right, #506680, #2C3E50);
@@ -95,8 +97,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #EDEDED;
-  border-color: #D1D1D1;
+  background-color: #0062cc;
+  border-color: #005cbf;
   transform: scale(1.05);
 }
 

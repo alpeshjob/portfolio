@@ -1,28 +1,45 @@
 import React, { useState }  from "react";
 
+
 const projects = [
   {
     id: 1,
     title: "Social App Features",
-    description: "A modern social media app built with React and Laravel.",
-    image: "images/portfolio/Social_App_Features.jpg",
+    description: "Developed a full-featured social app using Laravel Livewire. Designed flowcharts and database structure from scratch. Users can create profiles, connect, join communities, post content, and interact via reactions, comments, shares, follows, and bookmarks. Also built messaging, news, and job board sections for a complete social experience.",
+    image: "images/portfolio/SocialApp.png",
+    role: "Full Stack Developer",
+    TechStack: ['Laravel','API Integration','MySQL','JavaScript','Git']
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
-    description: "An advanced e-commerce solution with secure payment integration.",
-    image: "images/portfolio/Ecommerce_Platform.jpg",
+    title: "Subscribe for Builder and Hosting",
+    description: "Developed a web builder and hosting platform where users can subscribe to create and manage websites with ease. As Senior PHP Developer, I built user-friendly tools to support CMS, eCommerce, and subscription-based sites. Integrated email marketing, hosting management, and content editing features. Delivered a seamless, scalable solution that simplified website creation and boosted user productivity.",
+    image: "images/portfolio/Subscribe-Builder-Hosting.png",
+    role: "Senior PHP Developer",
+    TechStack: ['PHP','MySQL','Stripe','PayPal Integration','Asana','jQuery UI','Git']
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    description: "A professional portfolio built with React and Tailwind CSS.",
-    image: "images/portfolio/Portfolio_Website.jpg",
+    title: "Pickup/Drop-off Services",
+    description: "Pickup/Drop-off service platform with Google Maps integration. It enables live location tracking, smart alarms triggered by location, distance, or time, and notifications for journey start/stop. Includes attendance tracking to confirm presence. The system improved transport efficiency, enhanced safety, and simplified route and user management.I have Worked on Laravel API-based integration.",
+    image: "images/portfolio/Pick-DropOff.png",
+    role: "Full Stack Developer",
+    TechStack: ['Laravel','REST API','MySQL','Google Maps API','JavaScript','Git']
   },
 ];
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("portfolio");
-
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const handleViewProject = (project) => {    
+    setSelectedProject(project);
+    setShowModal(true);
+    document.body.classList.add("modal-open");
+  };
+  const handleClosePopup = () => {    
+    setShowModal(false);
+    document.body.classList.remove("modal-open");
+  };
   return (
     <div>
       {/* Header Section */}
@@ -36,7 +53,7 @@ const Portfolio = () => {
         <p className="fw-600">
           Full-Stack PHP Developer | Laravel Expert | WordPress Specialist | AWS Enthusiast
         </p>
-        <p>Contact: alpeshbheda.job@example.com | +91 6355176760</p>
+        <p>Contact: alpeshbheda.job@gmail.com | +91 6355176760</p>
       </header>
 
       {/* Main Content */}
@@ -90,18 +107,20 @@ const Portfolio = () => {
                         <h5 className="card-title">
                           <i className="fa fa-briefcase text-primary mr-2"></i> Project Portfolio
                         </h5>
-                        <p>Showcasing some of my best work, crafted with innovation and precision.</p>
+                        <p>Explore a selection of my finest work—thoughtfully designed and expertly developed to reflect creativity, precision, and a commitment to building meaningful digital experiences.</p>
                         <div className="row">
                         {projects.map((project) => (
                             <div key={project.id} className="col-md-4 mb-3">
                               <div className="card h-100 shadow">
                                 <img src={project.image} className="card-img-top" alt={project.title} />
                                 <div className="card-body d-flex flex-column">
-                                  <h5 className="card-title">{project.title}</h5>
-                                  <p className="card-text">{project.description}</p>
-                                  <a href="#" className="btn btn-primary mt-auto">
+                                  <h5 className="card-title">{project.title}</h5>                                  
+                                  <button
+                                    className="btn btn-primary mt-auto"
+                                    onClick={() => handleViewProject(project)}
+                                  >
                                     View Project
-                                  </a>
+                                  </button>
                                 </div>
                               </div>
                             </div>
@@ -123,17 +142,16 @@ const Portfolio = () => {
                           <i className="fa fa-user text-primary mr-2"></i> About Me
                         </h5>
                         <p>
-                          I am a full-stack developer with <strong>6+ years of experience</strong> in PHP, Laravel,
-                          Livewire, React, and
-                          cloud technologies. I have successfully built scalable <strong>social apps, CMS platforms, and
-                            e-commerce
-                            systems</strong>. My focus is on <strong>efficient backend logic, clean UI/UX, and performance
-                            optimization</strong>.
+                          I am a full-stack developer with <strong>6+ years of experience</strong> in PHP, Laravel, Livewire, React, and cloud technologies. 
+                          I specialize in building a wide range of web solutions, including <strong>hosting platforms, blog builders, 
+                          email marketing systems, subscription-based websites, crypto investment portals, map-based pickup/drop services, employee wallets, 
+                          dating sites, social apps, and custom tools like job boards and leave management systems</strong>.
+                          My focus is on efficient backend logic, clean UI/UX, and performance optimization.
                         </p>
-                        <p><i className="fa fa-phone text-success mr-2"></i> <strong>Mobile:</strong> +123456789</p>
-                        <p><i className="fa fa-envelope text-danger mr-2"></i> <strong>Email:</strong> user@example.com</p>
-                        <p><i className="fa fa-linkedin text-info mr-2"></i> <strong>LinkedIn:</strong>
-                          <a href="https://www.linkedin.com/in/demo-user" target="_blank">www.linkedin.com/in/demo-user</a>
+                        <p><i className="fa fa-phone text-success mr-2"></i> <strong>Mobile:</strong>&nbsp;+91 6355176760</p>
+                        <p><i className="fa fa-envelope text-danger mr-2"></i> <strong>Email:</strong>&nbsp;alpeshbheda.job@gmail.com </p>
+                        <p><i className="fa fa-linkedin text-info mr-2"></i> <strong>LinkedIn:</strong>&nbsp; 
+                          <a href="https://www.linkedin.com/in/alpeshbheda-dev" target="_blank">www.linkedin.com/in/alpeshbheda-dev</a>
                         </p>
 
                         {/* Skills & Expertise */}
@@ -395,9 +413,52 @@ const Portfolio = () => {
 
       {/* Footer Section */}
       <footer className="footer">
-        <p>Contact: alpeshbheda.job@example.com | Phone: +91 6355176760</p>
-        <p>&copy; 2024 Alpesh Bheda. All Rights Reserved.</p>
+        <p>Contact: alpeshbheda.job@gmail.com | Phone: +91 6355176760</p>
+        <p>&copy; 2025 Alpesh Bheda. All Rights Reserved.</p>
       </footer>
+      
+      {showModal && selectedProject && (
+      <div className="modal show" id="myModal" style={{ display: 'block' }}>
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">            
+            <div className="modal-header">
+              <h4 className="modal-title">{selectedProject.title}</h4>
+              <button type="button" className="close"  onClick={() => handleClosePopup()}>&times;</button>
+            </div>            
+            <div className="modal-body">
+              <div className="row">
+                <div className="col-md-6 mb-3">
+                  <div className="card">
+                    <div className="card-body">
+                      <h4 class="card-title">Project Involvement</h4>
+                      <p className="card-text">{selectedProject.role}</p> 
+                      <h4 class="card-title">About Project</h4>
+                      <p className="card-text">{selectedProject.description}</p>  
+                      <h4 class="card-title">Tech Stack & Key Deliverables</h4>
+                      {selectedProject.TechStack.map((tech, index) => (
+                          <span key={index} className="badge badge-dark p-2 my-1 mr-1">
+                            {tech}
+                          </span>                          
+                        ))}                      
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6 mb-3">
+                  <div className="card">
+                  <img src={selectedProject.image} className="card-img-top" alt={selectedProject.title} />
+                  </div>
+                </div>
+                
+              </div>
+            </div>          
+            
+
+          </div>
+        </div>
+      </div>
+      )}
+      {showModal && <div className="modal-backdrop show"></div>}
+
     </div>
   );
 };
