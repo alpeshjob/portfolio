@@ -349,11 +349,11 @@ const Portfolio = () => {
                           <p className="text-muted">
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
-                          <p className="text-justify">Developed full-stack web apps using Laravel, PHP, React, and Livewire
-                            Integrated APIs, payment gateways, and Google Maps services
-                            Created responsive UI with modern frontend technologies
-                            Optimized performance and fixed bugs in existing systems
-                            Worked independently and with remote teams using Git, Trello, Asana.</p>
+                          <p className="text-justify">Developed full-stack web apps using Laravel, PHP, React, and Livewire.
+                          <br></br>Integrated APIs, payment gateways, and Google Maps services.
+                          <br></br>Created responsive UI with modern frontend technologies.
+                          <br></br>Optimized performance and fixed bugs in existing systems.
+                          <br></br>Worked independently and with remote teams using Git, Trello, Asana.</p>
                         </div>
                       </div>
                     </div>
@@ -376,11 +376,12 @@ const Portfolio = () => {
                           <p className="text-muted">
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
-                          <p className="text-justify">Delivered custom web solutions for clients across various industries
-                              Built and maintained websites using Laravel, WordPress, and React
-                              Implemented features like subscriptions, booking systems, and user dashboards
-                              Ensured clean code, responsive design, and smooth user experience
-                              Provided ongoing support, updates, and performance improvements</p>         
+                          <p className="text-justify">Delivered custom web solutions for clients across various industries.
+                          <br></br>Integrated APIs, payment gateways, and Google Maps services.
+                          <br></br>Built and maintained websites using Laravel, WordPress, and React.
+                          <br></br>Implemented features like subscriptions, booking systems, and user dashboards.
+                          <br></br>Ensured clean code, responsive design, and smooth user experience.
+                          <br></br>Provided ongoing support, updates, and performance improvements.</p>         
                         </div>
                       </div>
                     </div>
@@ -404,7 +405,8 @@ const Portfolio = () => {
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
                           <p className="text-justify">This is where I started my developing career.
-                            Here I worked on building CMS websites , e-commerce platforms, and SaaS applications using PHP, MySQL and JavaScript. Implemented Google Maps API and payment gateway integration.</p>
+                          <br></br>Here I worked on building CMS websites , e-commerce platforms, and SaaS applications using PHP, CodeIgniter, Laravel, WordPress, MySQL and JavaScript.
+                          <br></br>Implemented Google Maps API and payment gateway integration.</p>
                         </div>
                       </div>
                     </div>
