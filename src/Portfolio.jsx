@@ -426,7 +426,12 @@ const Portfolio = () => {
               <button type="button" className="close"  onClick={() => handleClosePopup()}>&times;</button>
             </div>            
             <div className="modal-body">
-              <div className="row">
+              <div className="row">                
+                <div className="col-md-6 mb-3">
+                  <div className="card">
+                  <img src={selectedProject.image} className="card-img-top" alt={selectedProject.title} />
+                  </div>
+                </div>
                 <div className="col-md-6 mb-3">
                   <div className="card">
                     <div className="card-body">
@@ -443,12 +448,6 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mb-3">
-                  <div className="card">
-                  <img src={selectedProject.image} className="card-img-top" alt={selectedProject.title} />
-                  </div>
-                </div>
-                
               </div>
             </div>          
             
