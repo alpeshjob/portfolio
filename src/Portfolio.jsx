@@ -142,7 +142,7 @@ const Portfolio = () => {
                           <i className="fa fa-user text-primary mr-2"></i> About Me
                         </h5>
                         
-                        <div class="d-flex">
+                        <div class="d-flex flex-wrap">
                           <div class="p-2 flex-fill"><p><i className="fa fa-phone text-success mr-2"></i>&nbsp;+91 6355176760</p></div>
                           <div class="p-2 flex-fill"><p><i className="fa fa-envelope text-danger mr-2"></i>&nbsp;alpeshbheda.job@gmail.com </p></div>
                           <div class="p-2 flex-fill"><p><i className="fa fa-linkedin text-info mr-2"></i>&nbsp; 
@@ -157,141 +157,168 @@ const Portfolio = () => {
                           dating sites, social apps, and custom tools like job boards and leave management systems</strong>.
                           My focus is on efficient backend logic, clean UI/UX, and performance optimization.
                         </p>
-                        
-
-                        {/* Skills & Expertise */}
+                                                                       
+                        {/* Tech Stack & Expertise */}
                         <h5 className="mt-4">
-                          <i className="fa fa-cogs text-warning mr-2"></i> Skills & Expertise
-                        </h5>
-                        <div class="d-flex bg-light mt-4 mb-3">
-                          <div class="p-2 flex-fill border">PHP</div>
-                          <div class="p-2 flex-fill border">Laravel</div>
-                          <div class="p-2 flex-fill border">API Integration</div>
-                          <div class="p-2 flex-fill border">MySQL</div>                          
-                          <div class="p-2 flex-fill border">Responsive Design</div>
-                          <div class="p-2 flex-fill border">React</div>
-                          <div class="p-2 flex-fill border">WordPress</div>                                                                              
-                          <div class="p-2 flex-fill border">GitHub</div>                                                    
-                          <div class="p-2 flex-fill border">Asana</div>                          
-                        </div>                        
-
-                        {/* Project Highlights */}
-                        <h5 className="mt-4">
-                          <i className="fa fa-trophy text-primary mr-2"></i> Project Highlights
+                          <i className="fa fa-cogs text-primary mr-2"></i> Tech Stack & Expertise
                         </h5>
                         <div className="row">
                           <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-comments text-success mr-2"></i> Social App</h6>
-                              <p className="text-muted">Features for posts, communities, job boards, and interactions.</p>
-
-                            </div>
-                            <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-globe text-warning mr-2"></i> React-Laravel CMS</h6>
-                              <p className="text-muted">Organizational website with React frontend and Laravel backend.</p>
-                            </div>
-                            <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-credit-card text-danger mr-2"></i> Subscription Websites
+                              <h6 className="text-dark">
+                                <i className="fa fa-server text-success mr-2"></i> Backend Development
                               </h6>
-                              <p className="text-muted">Hosting, email marketing, and website builder solutions.</p>
+                              <p className="text-muted">Laravel, CodeIgniter, WordPress, PHP</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-desktop text-warning mr-2"></i> Frontend Development
+                              </h6>
+                              <p className="text-muted">HTML, CSS, JavaScript, React, jQuery, Responsive Design</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-plug text-danger mr-2"></i> API Development
+                              </h6>
+                              <p className="text-muted">REST APIs, Third-Party Integrations</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-credit-card text-info mr-2"></i> Payment Gateways
+                              </h6>
+                              <p className="text-muted">PayPal, Stripe, Razorpay</p>
                             </div>
                           </div>
                           <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-map-marker-alt text-info mr-2"></i> Pickup/Drop-off
-                                Services</h6>
-                              <p className="text-muted">Google Maps and distance algorithms for efficient logistics.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-cloud text-primary mr-2"></i> Cloud Services
+                              </h6>
+                              <p className="text-muted">AWS (S3, Lambda, EC2), Google Services (Maps, reCaptcha)</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-heart text-danger mr-2"></i> Matchmaking Solutions</h6>
-                              <p className="text-muted">Personalized platforms for meaningful life partner connections.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-database text-success mr-2"></i> Database
+                              </h6>
+                              <p className="text-muted">MySQL with advanced database design principles</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-shopping-cart text-primary mr-2"></i> E-commerce
-                                Platforms</h6>
-                              <p className="text-muted">Complete product and sales management for businesses.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-code-branch text-warning mr-2"></i> Version Control
+                              </h6>
+                              <p className="text-muted">GitHub for source control and collaboration</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-tasks text-danger mr-2"></i> Task Management
+                              </h6>
+                              <p className="text-muted">Trello, Asana for team collaboration and project tracking</p>
                             </div>
                           </div>
                         </div>
-                        {/* Technical Expertise */}
+
+                        {/* What I Offer */}
                         <h5 className="mt-4">
-                          <i className="fa fa-laptop-code text-success mr-2"></i> Technical Expertise
+                          <i className="fa fa-briefcase text-primary mr-2"></i> What I Offer
                         </h5>
                         <div className="row">
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-database text-primary mr-2"></i> Advanced Database
-                                Systems</h6>
-                              <p className="text-muted">Designing optimized, scalable, and efficient databases.</p>
-                            </div>
-                            <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-code-branch text-warning mr-2"></i> Version Control</h6>
-                              <p className="text-muted">Leveraging GitHub for seamless application deployment and collaboration.
-                              </p>
-                            </div>
-                            <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-tasks text-danger mr-2"></i> Agile Project Management
+                              <h6 className="text-dark">
+                                <i className="fa fa-code text-success mr-2"></i> Custom Web Applications
                               </h6>
-                              <p className="text-muted">Streamlining workflows with tools like Trello and Asana.</p>
+                              <p className="text-muted">Custom web application development tailored to your unique business needs.</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-plug text-warning mr-2"></i> API & Integration
+                              </h6>
+                              <p className="text-muted">Robust API development and seamless third-party service integration.</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-desktop text-danger mr-2"></i> Frontend Development
+                              </h6>
+                              <p className="text-muted">Modern and responsive UI/UX for smooth user experiences on all devices.</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-tools text-info mr-2"></i> Code Quality & Architecture
+                              </h6>
+                              <p className="text-muted">Clean, optimized code built on scalable and maintainable architecture.</p>
                             </div>
                           </div>
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-globe text-info mr-2"></i> Web Development</h6>
-                              <p className="text-muted">Creating user-friendly, scalable, and high-performance web solutions.
-                              </p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-sync text-primary mr-2"></i> Maintenance & Updates
+                              </h6>
+                              <p className="text-muted">Ongoing maintenance, updates, and improvements for existing applications.</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-plug text-secondary mr-2"></i> Technology Integration
+                              <h6 className="text-dark">
+                                <i className="fa fa-bug text-success mr-2"></i> Bug Fixing & Performance
                               </h6>
-                              <p className="text-muted">Implementing modern technologies and third-party services.</p>
+                              <p className="text-muted">Quick bug fixes and performance enhancements for better system reliability.</p>
+                            </div>
+                            <div className="card shadow-sm p-3 mb-2">
+                              <h6 className="text-dark">
+                                <i className="fa fa-layer-group text-warning mr-2"></i> Platform Solutions
+                              </h6>
+                              <p className="text-muted">Solutions for subscription-based, eCommerce, niche, tools, and service platforms.</p>
                             </div>
                           </div>
                         </div>
-                        {/* Expertise & Solutions */}
+
+                        {/* Why Choose Me? */}
                         <h5 className="mt-4">
-                          <i className="fa fa-cogs text-primary mr-2"></i> Expertise & Solutions
+                          <i className="fa fa-star text-primary mr-2"></i> Why Choose Me?
                         </h5>
                         <div className="row">
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-globe text-success mr-2"></i> Comprehensive Platforms
+                              <h6 className="text-dark">
+                                <i className="fa fa-code text-success mr-2"></i> Clean & Scalable Code
                               </h6>
-                              <p className="text-muted">Hosting platforms, blog builders, email marketing systems.</p>
+                              <p className="text-muted">Strong attention to detail with clean, maintainable, and scalable code structure.</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-users text-warning mr-2"></i> Subscription & Membership
-                                Websites</h6>
-                              <p className="text-muted">Seamless, scalable, and user-friendly solutions.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-comments text-warning mr-2"></i> Clear Communication
+                              </h6>
+                              <p className="text-muted">Dedicated to clear, consistent, and professional communication throughout the project.</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-lightbulb text-danger mr-2"></i> Innovative Solutions
+                              <h6 className="text-dark">
+                                <i className="fa fa-tools text-danger mr-2"></i> Troubleshooting & Optimization
                               </h6>
-                              <p className="text-muted">Crypto investment platforms, Google Maps pickup/drop-off services,
-                                employee wallet systems.</p>
+                              <p className="text-muted">Proficient in debugging issues and optimizing existing codebases for better performance.</p>
                             </div>
                           </div>
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-heart text-info mr-2"></i> Niche Applications</h6>
-                              <p className="text-muted">Dating websites, leave management systems for employees.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-users text-info mr-2"></i> Team & Independent Work
+                              </h6>
+                              <p className="text-muted">Experienced in working independently or collaboratively with diverse teams.</p>
                             </div>
                             <div className="card shadow-sm p-3 mb-2">
-                              <h6 className="text-dark"><i className="fa fa-comments text-secondary mr-2"></i> Social App
-                                Development</h6>
-                              <p className="text-muted">Interactive posts, community building, job boards, and appointment
-                                scheduling.</p>
+                              <h6 className="text-dark">
+                                <i className="fa fa-check-circle text-primary mr-2"></i> Quality & Timely Delivery
+                              </h6>
+                              <p className="text-muted">Committed to delivering reliable, high-quality solutions on time and with confidence.</p>
                             </div>
                           </div>
                         </div>
+                                                    
                         {/* Let's Connect Section */}
                         <div className="text-center mt-5">
                           <h4 className="font-weight-bold">
                             <i className="fa fa-handshake text-primary mr-2"></i> Let’s Connect
                           </h4>
                           <p className="text-muted">
-                            Let's Connect and Create Something Extraordinary, Turning Vision into Scalable, High-Performance
-                            Solutions!
+                          Let’s create something extraordinary by turning your vision into scalable, high-performance solutions
+                          </p><p className="text-muted">Feel free to reach out — I’m happy to discuss your project and how I can help
                           </p>
                           <a href="#" className="btn btn-primary btn-lg mt-2">
                             <i className="fa fa-paper-plane mr-2"></i> Connect
@@ -317,13 +344,16 @@ const Portfolio = () => {
                             <i className="fa fa-building text-success mr-2"></i> Ingenuity Fintech Services Pvt Ltd
                           </h6>
                           <p className="text-muted">
-                            <i className="fa fa-calendar text-warning mr-2"></i> Feb 2023 - Present
+                            <i className="fa fa-calendar text-warning mr-2"></i> February 2023 - Present
                           </p>
                           <p className="text-muted">
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
-                          <p>Design, develop, and maintain scalable web applications using Laravel, Vue.js, and React.
-                            Expertise in API development, database management, and cloud deployment.</p>
+                          <p className="text-justify">Developed full-stack web apps using Laravel, PHP, React, and Livewire
+                            Integrated APIs, payment gateways, and Google Maps services
+                            Created responsive UI with modern frontend technologies
+                            Optimized performance and fixed bugs in existing systems
+                            Worked independently and with remote teams using Git, Trello, Asana.</p>
                         </div>
                       </div>
                     </div>
@@ -341,14 +371,16 @@ const Portfolio = () => {
                             <i className="fa fa-building text-success mr-2"></i> Self-Employed
                           </h6>
                           <p className="text-muted">
-                            <i className="fa fa-calendar text-warning mr-2"></i> Aug 2020 - Jan 2025
+                            <i className="fa fa-calendar text-warning mr-2"></i> August 2020 - January 2025
                           </p>
                           <p className="text-muted">
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
-                          <p>Developed custom web applications for various industries, specializing in Laravel, CodeIgniter,
-                            and WordPress.
-                            Integrated third-party APIs and built scalable business solutions.</p>
+                          <p className="text-justify">Delivered custom web solutions for clients across various industries
+                              Built and maintained websites using Laravel, WordPress, and React
+                              Implemented features like subscriptions, booking systems, and user dashboards
+                              Ensured clean code, responsive design, and smooth user experience
+                              Provided ongoing support, updates, and performance improvements</p>         
                         </div>
                       </div>
                     </div>
@@ -366,14 +398,13 @@ const Portfolio = () => {
                             <i className="fa fa-building text-success mr-2"></i> Parshwa Technologies
                           </h6>
                           <p className="text-muted">
-                            <i className="fa fa-calendar text-warning mr-2"></i> May 2016 - Aug 2020
+                            <i className="fa fa-calendar text-warning mr-2"></i> May 2016 - August 2020
                           </p>
                           <p className="text-muted">
                             <i className="fa fa-map-marker text-danger mr-2"></i> Ahmedabad, Gujarat, India
                           </p>
-                          <p>Worked on building e-commerce platforms, CMS websites, and SaaS applications using PHP, MySQL,
-                            and JavaScript.
-                            Implemented Google Maps API and payment gateway integrations.</p>
+                          <p className="text-justify">This is where I started my developing career.
+                            Here I worked on building CMS websites , e-commerce platforms, and SaaS applications using PHP, MySQL and JavaScript. Implemented Google Maps API and payment gateway integration.</p>
                         </div>
                       </div>
                     </div>
