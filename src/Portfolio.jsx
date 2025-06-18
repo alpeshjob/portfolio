@@ -146,7 +146,7 @@ const Portfolio = () => {
                           <div class="p-2 flex-fill"><p><i className="fa fa-phone text-success mr-2"></i>&nbsp;+91 6355176760</p></div>
                           <div class="p-2 flex-fill"><p><i className="fa fa-envelope text-danger mr-2"></i>&nbsp;alpeshbheda.job@gmail.com </p></div>
                           <div class="p-2 flex-fill"><p><i className="fa fa-linkedin text-info mr-2"></i>&nbsp; 
-                            <a href="https://www.linkedin.com/in/alpeshbheda-dev" target="_blank">www.linkedin.com/in/alpeshbheda-dev</a>
+                            <a href="https://www.linkedin.com/in/alpeshbheda-dev" target="_blank">linkedin.com/in/alpeshbheda-dev</a>
                           </p></div>
                         </div>
                                               
