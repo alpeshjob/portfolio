@@ -107,7 +107,7 @@ const Portfolio = () => {
                         <h5 className="card-title">
                           <i className="fa fa-briefcase text-primary mr-2"></i> Project Portfolio
                         </h5>
-                        <p>Explore a selection of my finest work—thoughtfully designed and expertly developed to reflect creativity, precision, and a commitment to building meaningful digital experiences.</p>
+                        <p className="text-justify">Explore a selection of my finest work—thoughtfully designed and expertly developed to reflect creativity, precision, and a commitment to building meaningful digital experiences.</p>
                         <div className="row">
                         {projects.map((project) => (
                             <div key={project.id} className="col-md-4 mb-3">
@@ -141,46 +141,46 @@ const Portfolio = () => {
                         <h5 className="card-title">
                           <i className="fa fa-user text-primary mr-2"></i> About Me
                         </h5>
-                        <p>
+                        
+                        <div class="d-flex">
+                          <div class="p-2 flex-fill"><p><i className="fa fa-phone text-success mr-2"></i>&nbsp;+91 6355176760</p></div>
+                          <div class="p-2 flex-fill"><p><i className="fa fa-envelope text-danger mr-2"></i>&nbsp;alpeshbheda.job@gmail.com </p></div>
+                          <div class="p-2 flex-fill"><p><i className="fa fa-linkedin text-info mr-2"></i>&nbsp; 
+                            <a href="https://www.linkedin.com/in/alpeshbheda-dev" target="_blank">www.linkedin.com/in/alpeshbheda-dev</a>
+                          </p></div>
+                        </div>
+                                              
+                        <p className="text-justify">
                           I am a full-stack developer with <strong>6+ years of experience</strong> in PHP, Laravel, Livewire, React, and cloud technologies. 
                           I specialize in building a wide range of web solutions, including <strong>hosting platforms, blog builders, 
                           email marketing systems, subscription-based websites, crypto investment portals, map-based pickup/drop services, employee wallets, 
                           dating sites, social apps, and custom tools like job boards and leave management systems</strong>.
                           My focus is on efficient backend logic, clean UI/UX, and performance optimization.
                         </p>
-                        <p><i className="fa fa-phone text-success mr-2"></i> <strong>Mobile:</strong>&nbsp;+91 6355176760</p>
-                        <p><i className="fa fa-envelope text-danger mr-2"></i> <strong>Email:</strong>&nbsp;alpeshbheda.job@gmail.com </p>
-                        <p><i className="fa fa-linkedin text-info mr-2"></i> <strong>LinkedIn:</strong>&nbsp; 
-                          <a href="https://www.linkedin.com/in/alpeshbheda-dev" target="_blank">www.linkedin.com/in/alpeshbheda-dev</a>
-                        </p>
+                        
 
                         {/* Skills & Expertise */}
                         <h5 className="mt-4">
                           <i className="fa fa-cogs text-warning mr-2"></i> Skills & Expertise
                         </h5>
-                        <div className="row">
-                          <div className="col-md-6">
-                            <span className="badge badge-primary p-2 my-1 mr-1">Laravel</span>
-                            <span className="badge badge-success p-2 my-1 mr-1">React</span>
-                            <span className="badge badge-danger p-2 my-1 mr-1">WordPress</span>
-                            <span className="badge badge-info p-2 my-1 mr-1">JavaScript</span>
-                            <span className="badge badge-dark p-2 my-1 mr-1">jQuery</span>
-                          </div>
-                          <div className="col-md-6">
-                            <span className="badge badge-secondary p-2 my-1 mr-1">API Development</span>
-                            <span className="badge badge-warning p-2 my-1 mr-1">AWS (S3, Lambda, EC2)</span>
-                            <span className="badge badge-light p-2 my-1 mr-1">GitHub</span>
-                            <span className="badge badge-primary p-2 my-1 mr-1">MySQL</span>
-                            <span className="badge badge-danger p-2 my-1 mr-1">Payment Gateways</span>
-                          </div>
-                        </div>
+                        <div class="d-flex bg-light mt-4 mb-3">
+                          <div class="p-2 flex-fill border">PHP</div>
+                          <div class="p-2 flex-fill border">Laravel</div>
+                          <div class="p-2 flex-fill border">API Integration</div>
+                          <div class="p-2 flex-fill border">MySQL</div>                          
+                          <div class="p-2 flex-fill border">Responsive Design</div>
+                          <div class="p-2 flex-fill border">React</div>
+                          <div class="p-2 flex-fill border">WordPress</div>                                                                              
+                          <div class="p-2 flex-fill border">GitHub</div>                                                    
+                          <div class="p-2 flex-fill border">Asana</div>                          
+                        </div>                        
 
                         {/* Project Highlights */}
                         <h5 className="mt-4">
                           <i className="fa fa-trophy text-primary mr-2"></i> Project Highlights
                         </h5>
                         <div className="row">
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
                               <h6 className="text-dark"><i className="fa fa-comments text-success mr-2"></i> Social App</h6>
                               <p className="text-muted">Features for posts, communities, job boards, and interactions.</p>
@@ -196,7 +196,7 @@ const Portfolio = () => {
                               <p className="text-muted">Hosting, email marketing, and website builder solutions.</p>
                             </div>
                           </div>
-                          <div className="col-md-6">
+                          <div className="col-md-6 mb-3">
                             <div className="card shadow-sm p-3 mb-2">
                               <h6 className="text-dark"><i className="fa fa-map-marker-alt text-info mr-2"></i> Pickup/Drop-off
                                 Services</h6>
@@ -438,7 +438,7 @@ const Portfolio = () => {
                       <h4 class="card-title">Project Involvement</h4>
                       <p className="card-text">{selectedProject.role}</p> 
                       <h4 class="card-title">About Project</h4>
-                      <p className="card-text">{selectedProject.description}</p>  
+                      <p className="card-text text-justify">{selectedProject.description}</p>  
                       <h4 class="card-title">Tech Stack & Key Deliverables</h4>
                       {selectedProject.TechStack.map((tech, index) => (
                           <span key={index} className="badge badge-dark p-2 my-1 mr-1">
