@@ -98,7 +98,7 @@ const Portfolio = () => {
 
             {/* Portfolio Content */}
             <div className="tab-content">
-              <div id="portfolio" className={`container tab-pane ${activeTab === "portfolio" ? "active" : "fade"}`}>
+              <div id="portfolio" className={`tab-pane ${activeTab === "portfolio" ? "active" : "fade"}`}>
                 <br />
                 <div className="row justify-content-center my-5">
                   <div className="col-md-12">
@@ -131,7 +131,7 @@ const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              <div id="about" className={`container tab-pane ${activeTab === "about" ? "active" : "fade"}`}>
+              <div id="about" className={`tab-pane ${activeTab === "about" ? "active" : "fade"}`}>
                 
                 <div className="row justify-content-center my-5">
                   <div className="col-md-12">
@@ -303,7 +303,7 @@ const Portfolio = () => {
                   </div> {/* Col */}
                 </div> {/* Row */}
               </div>
-              <div id="experience" className={`container tab-pane ${activeTab === "experience" ? "active" : "fade"}`}>
+              <div id="experience" className={`tab-pane ${activeTab === "experience" ? "active" : "fade"}`}>
                   <h3 className="text-center fw-bold mt-4">Experience</h3>
                 {/* Experience 1 */}
                   <div className="row justify-content-center mb-4">
@@ -380,7 +380,7 @@ const Portfolio = () => {
                   </div>
 
               </div>
-              <div id="education" className={`container tab-pane ${activeTab === "education" ? "active" : "fade"}`}>
+              <div id="education" className={`tab-pane ${activeTab === "education" ? "active" : "fade"}`}>
                 <h3 className="text-center fw-bold mt-4">Education</h3>
                 <div className="row justify-content-center">
                   <div className="col-md-10">
